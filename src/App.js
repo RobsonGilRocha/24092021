@@ -1,12 +1,14 @@
-
+import {Container, Wallpaper} from "./styles"
 
 function App() {
   return (
-    <div>
-      <h1>
-        Edmar !NÃO É GAY
-      </h1>
-    </div>
+    <Wallpaper>
+      <Container>
+        <h1>
+          Mensagem padão, que não deveria ser.
+        </h1>
+      </Container>
+     </Wallpaper>
   );
 }
 
