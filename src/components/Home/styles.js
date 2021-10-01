@@ -2,16 +2,17 @@ import styled from 'styled-components';
 
 export const Container = styled.div`
 background-color: gray;
-font: white;
+color: white;
 border:  10px green;
 border-radius: 3px;
-height: 50%;
-width: 50%;
+font-size: 10px;
+
 `
 
 export const Wallpaper = styled.div`
-background-color: black;
-height: 100%;
-width: 100%;
-z-index: - 1;
+
+display: flex;
+align-items: center;
+justify-content: center;
+height: 100vh;
 `

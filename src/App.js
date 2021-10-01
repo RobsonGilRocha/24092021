@@ -1,14 +1,20 @@
-import {Container, Wallpaper} from "./styles"
+import "./index.css"
+import Home from "./components/Home"
+import Header from "./components/Header"
+import Footer from "./components/Footer"
+import Templete from "./components/Templete"
+import {Provider} from 'react-redux'
+import store from './store'
 
 function App() {
   return (
-    <Wallpaper>
-      <Container>
-        <h1>
-          Mensagem padão, que não deveria ser.
-        </h1>
-      </Container>
-     </Wallpaper>
+    <Provider store={store}>
+      <Templete>
+        <Header/>
+        <Home/>
+        <Footer/>
+      </Templete>
+    </Provider>
   );
 }
 
