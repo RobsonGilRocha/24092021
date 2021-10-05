@@ -5,6 +5,8 @@ const INITIAL_STATE = {
     load: false,
     colorDark: false,
     error: false,
+    user : "",
+    password: "",
   }
 
   function truefalse(state = INITIAL_STATE, action){
@@ -25,6 +27,10 @@ const INITIAL_STATE = {
                   return { ...state, error: false};
             case 'ERROR_TRUE' :
                   return { ...state, error: true};
+            case 'LOGIN_USER' :
+                  return { ...state, user: action.user};
+            case 'LOGIN_PASS' :
+                  return { ...state, password: action.password};
                 default:
                     return state;
         }
